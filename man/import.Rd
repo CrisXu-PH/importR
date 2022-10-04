@@ -16,14 +16,18 @@ a data frame
 }
 \description{
 This \code{import} function can import data from
-delimited text files, EXCEL spredsheets, and
-statistical packages such as SAS, SPSS, ad Stata
+delimited text files, EXCEL spredsheets, JavaScript and
+statistical packages such as SAS, SPSS, and Stata
 }
 \details{
 The import function is wrapper for the
 \href{https://haven.tidyverse.org/}{haven},
 \href{https://readxl.tidyverse.org/}{readxl},
+\href{https://cran.r-project.org/web/packages/rjson/index.html}{rjson}
 and \href{httpls://github.com/r-lib/vroom}{vroom} packages.
+}
+\note{
+Complex nested JSON files will not be imported properly.
 }
 \examples{
 \dontrun{
@@ -44,6 +48,7 @@ mydatarame <- import()
 \link[haven]{read_sas},
 \link[haven]{read_dta},
 \link[haven]{read_spss},
-\link[haven]{read_excel},
+\link[readxl]{read_excel},
+\link[rjson]{fromJSON},
 \link[vroom]{vroom}
 }
