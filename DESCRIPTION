@@ -1,0 +1,22 @@
+Package: importR
+Title: Import an external file into an R data frame
+Version: 1.0.1
+Authors@R: 
+    person("Christina", "Xu", , "cxu@wesleyan.edu", 
+            role = c("aut", "cre"))
+Description: This import function can import data from
+    delimited text files, EXCEL spredsheets, and
+    statistical packages such as SAS, SPSS, ad Stata
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Imports: 
+    haven,
+    readxl,
+    tools,
+    vroom
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
