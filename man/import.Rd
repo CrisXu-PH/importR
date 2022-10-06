@@ -18,6 +18,7 @@ a data frame
 This \code{import} function can import data from
 delimited text files, EXCEL spredsheets, JavaScript and
 statistical packages such as SAS, SPSS, and Stata
+This is wonderful.
 }
 \details{
 The import function is wrapper for the
